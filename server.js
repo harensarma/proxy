@@ -15,7 +15,7 @@ try {
     })
     .then(ca =>
       mkcert.createCert({
-        domains: ["127.0.0.1", "localhost", "207.244.248.151"],
+        domains: ["127.0.0.1", "localhost", "195.88.87.168"],
         validityDays: 3650,
         caKey: ca.key,
         caCert: ca.cert
@@ -25,7 +25,7 @@ try {
       httpProxy
         .createServer({
           target: {
-            host: "207.244.248.151",
+            host: "195.88.87.168",
             port: 8546
           },
           ssl: {
